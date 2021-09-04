@@ -28,3 +28,15 @@ Song pace (w/l) is:  52.38095238095238
 Song diversity (u/w) is:  0.6818181818181818
 Song interest (u/l) is:  35.714285714285715 
 
+For file ohno with length of 3:10:
+373 3.1666666666666665 91
+Song pace (w/l) is:  117.78947368421053
+Song diversity (u/w) is:  0.24396782841823056
+Song interest (u/l) is:  28.736842105263158 
+
+For file inthepines with length of 5:06:
+231 5.1 51
+Song pace (w/l) is:  45.294117647058826
+Song diversity (u/w) is:  0.22077922077922077
+Song interest (u/l) is:  10.0 
+

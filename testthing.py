@@ -2,8 +2,8 @@
 from sys import argv
 
 in_file = argv[1]
-in_minutes = argv[2]
-in_seconds = argv[3]
+#in_minutes = argv[2]
+#in_seconds = argv[3]
 
 text_file = open(in_file, 'r')
 text = text_file.read()
@@ -17,11 +17,16 @@ words = [word.replace("'s", '') for word in words]
 
 #get word count
 word_count = len(words)
+print(word_count)
 
 word_freq = []
 for w in words:
     word_freq.append(words.count(w))
 
+sort_freq = sorted(list(set(word_freq)))
+print(sort_freq)
+word_list = list(set(zip(words, word_freq)))
+sort_list = (sorted(word_list, key = lambda x: x[1]))
 
 #get unique words
 unique = []
@@ -29,7 +34,18 @@ for word in words:
     if word not in unique:
         unique.append(word)
 unique_count = len(unique)
+list_count = len(words)
 
+#twenty_number = int(list_count * .2)
+#print(twenty_number)
+top_twenty = sort_list[0:(int(list_count * .4))]
+last_twenty = sort_list[-(int(list_count * .1)):]
+last_twenty_count = 0
+print(last_twenty_count)
+print(top_twenty)
+print(last_twenty)
+
+exit()
 #get length
 #length = float(input("How long is this song? "))
 minutes = float(in_minutes)
