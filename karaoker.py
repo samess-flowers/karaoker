@@ -32,7 +32,6 @@ seconds = (float(in_seconds) / 60)
 length = minutes + seconds
 #do math on counts
     #words/length
-print(word_count , length , unique_count)
 pace = word_count / length
     #unique/words
 diversity = unique_count / word_count
@@ -41,6 +40,7 @@ interest = unique_count / length
 #display metrics
 
 print(f"For file {in_file} with length of {in_minutes}:{in_seconds}:")
+print(word_count , length , unique_count)
 print("Song pace (w/l) is: " , pace)
 print("Song diversity (u/w) is: " , diversity)
-print("Song interest (u/l) is: " , interest)
+print("Song interest (u/l) is: " , interest, "\n")
